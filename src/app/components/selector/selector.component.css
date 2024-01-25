@@ -1,0 +1,53 @@
+.btn-group {
+    align-items: flex-end baseline;
+}
+
+.color {
+    background-color: #134779;
+}
+
+.forma {
+    width: 165px;
+    height: 40px;
+    position: absolute;
+    margin-left: 72px;
+    transition: all 300ms;
+}
+
+li a {
+    cursor: pointer;
+}
+
+.forma:hover {
+    background-color: #2374CA;
+}
+
+@media screen and (max-width: 311px) {
+    .forma {
+        margin-left: 70px;
+    }
+}
+
+@media screen and (max-width: 301px) {
+    .forma {
+        margin-left: 65px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .forma {
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .forma {
+        margin-left: 45px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .forma {
+        margin-left: 40px;
+    }
+}

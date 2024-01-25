@@ -1,0 +1,41 @@
+[33mcommit 4847508226426109a73dbbcc9fb35e227b969a8e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Fri Dec 29 15:24:36 2023 -0600
+
+    Se agregó el botón de agregar a contactos
+
+[33mcommit 5b6de74c5b50c6d41b2a0d008070f7a5a0b8f9cf[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Thu Dec 28 21:54:28 2023 -0600
+
+    Se implementó un responsive disgn
+
+[33mcommit e2d7a520b79cf1d2cb447944e02a374f01da0ef9[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Sun Dec 24 00:45:42 2023 -0600
+
+    Se cambió el numero de telefono
+
+[33mcommit 8d848649625e6aaa9ef8177992cd793b40f848dc[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Sat Dec 23 23:56:21 2023 -0600
+
+    Se implementó todo, se probará si funciona en celular
+
+[33mcommit f988e7c0b8a4239606c5d2387478dede64c94635[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Fri Nov 3 19:28:04 2023 -0600
+
+    Se agregó funcionalidad al botón
+
+[33mcommit 1172f31141d2fb3e2b75274b9fb95f7d6c223e56[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Wed Nov 1 17:44:04 2023 -0600
+
+    Primer commit con diseño principal pero sin funcionalidad
+
+[33mcommit 8dec6918a4bdfca0979269520245fc6a451cdb27[m
+Author: angel adrian monsivais lopez <angel220803@hotmail.com>
+Date:   Wed Nov 1 13:24:50 2023 -0600
+
+    initial commit
