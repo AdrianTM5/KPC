@@ -1,18 +1,13 @@
 #Card{
     text-decoration: none;
     color: black !important;
-    border: 5px solid;
-    border-color: #134779;
-    transition: all 300ms;
-}
-
-#Card:hover {
-    border-color: #2374CA;
 }
 
 .card {
     margin-top: 10px;
     margin-bottom: 10px;
+    height: 150px !important;
+    border-radius: 50px 50px;
 }
 
 .last-child{
@@ -25,8 +20,14 @@
     top: 22px !important;
 }
 
-.card h5, p {
+.card h5 {
     margin-left: 80px;
+    margin-top: -10px;
+}
+
+.card p {
+    margin-left: 80px;
+    margin-top: -5px;
 }
 
 #Contacto {
@@ -35,7 +36,7 @@
 
 #g {
     display: flex !important;
-    background-color: #134779;
+    background: linear-gradient(rgba(3,35,68,0.80), rgba(3,35,68,0.80));
     transition: 300ms all;
     text-decoration: none;
     color: white;
@@ -170,18 +171,14 @@
         width: 80px;
         height: 80px;
         left: 15px !important;
-        top: 90px !important;
+        top: 30px !important;
     }
 
     .card p {
-        font-size: 20px ;
+        font-size: 18px ;
      }
  
      .card h5 {
-         font-size: 20px ;
-    }
-    
-    .card-body {
-        margin-top: 60px;
+        font-size: 20px ;
     }
 }

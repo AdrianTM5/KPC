@@ -34,7 +34,7 @@ export class InfoComponent {
 
   es: any = [
     {
-      title: 'Agenda una cita',
+      title: 'Agenda tu cita',
       desc: 'Aparta un día para reunirte conmigo',
       link: 'https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVBxcGp2Tlg3VmFmfGRlZmF1bHR8NjgxOTJiODU3M2Q4Zjk3MTY4NzNjMzU0ODk3MzFhOTM',
       img: '../../../assets/svg/calendar.svg'
