@@ -21,7 +21,7 @@ export class InfoComponent {
     {
       title: 'My social media profiles',
       desc: 'Follow me!',
-      img: '../../../assets/svg/globe.svg'
+      img: '../../../assets/svg/globe.svg',
     }
   ];
 
