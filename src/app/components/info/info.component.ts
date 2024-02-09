@@ -7,9 +7,11 @@ import { SelectorComponent } from '../selector/selector.component';
   styleUrls: ['./info.component.css']
 })
 export class InfoComponent {
-  
+  modalSwitch: boolean
+
   constructor(public selector: SelectorComponent){
     selector.op = 0;
+    this.modalSwitch = false;
   }
   en: any = [
     {
@@ -38,4 +40,9 @@ export class InfoComponent {
       img: '../../../assets/svg/globe.svg'
     }
   ]
+
+  switchModal(){
+    this.modalSwitch = !this.modalSwitch;
+    console.log(this.modalSwitch)
+  }
 }

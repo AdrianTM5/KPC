@@ -17,7 +17,7 @@
           </div>
           <ng-template #onclick>
             <div>
-              <a *ngIf="project.click == null" onclick="console.log('Oda')" id="Card">
+              <a *ngIf="project.click == null" (click)="switchModal()" id="Card"  data-bs-toggle="modal" data-bs-target="#myModal">
                 <img [src]="project.img" class="card-img-right img-size" height="80px">
                 <div class="card-body">
                   <h5 class="card-title">{{project.title}}</h5>
@@ -40,7 +40,7 @@
     <div class="col">
       <div *ngFor="let project of en; let last = last" class="row-md-4 no-gutters" >
         <div class="card" style="width: 18rem;">
-          <div *ngIf="project.link != null; else onclick">
+           <div *ngIf="project.link != null; else onclick">
             <a [href]="project.link" id="Card">
               <img [src]="project.img" class="card-img-right img-size" height="80px">
               <div class="card-body">
@@ -51,7 +51,7 @@
           </div>
           <ng-template #onclick>
             <div>
-              <a *ngIf="project.click == null" onclick="console.log('Oda')" id="Card">
+              <a *ngIf="project.click == null" (click)="switchModal()" id="Card"  data-bs-toggle="modal" data-bs-target="#myModal">
                 <img [src]="project.img" class="card-img-right img-size" height="80px">
                 <div class="card-body">
                   <h5 class="card-title">{{project.title}}</h5>
@@ -66,20 +66,29 @@
   </div>
 </div>
 
-<div id="ProjectModal" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" id="modal-color">
-      <div class="modal-header">
-        <h4 class="modal-title">Oda</h4>
-      </div>
-      <div class="modal-body">
-        <img [src]="" id="modalImg">
-        <p>Oda</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success green"  data-bs-dismiss="modal">Ir</button>
-        <button type="button" class="btn btn-default marco" data-bs-dismiss="modal">Cerrar</button>
+<div *ngIf="selector.op == 0; else modEng">
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <div class="modal-header">
+          <h4 class="modal-title">Mis redes sociales</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
       </div>
     </div>
   </div>
 </div>
+
+<ng-template #modEng>
+
+</ng-template>
