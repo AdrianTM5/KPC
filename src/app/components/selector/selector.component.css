@@ -12,6 +12,8 @@
     position: absolute;
     margin-left: 72px;
     transition: all 300ms;
+    font-family: 'Lexend, sans-serif';
+    font-size: 17px;
 }
 
 li a {

@@ -19,16 +19,9 @@ export class InfoComponent {
       img: '../../../assets/svg/calendar.svg'
     },
     {
-      title: 'Instagram',
-      desc: 'Follow us on Instagram!',
-      link: 'https://www.instagram.com/prosaleng',
-      img: '../../../assets/svg/instagram.svg'
-    },
-    {
-      title: 'TikTok',
-      desc: 'Follow us on TikTok!',
-      link: 'https://www.tiktok.com/@prosallife',
-      img: '../../../assets/svg/tiktok.svg'
+      title: 'My social media profiles',
+      desc: 'Follow me!',
+      img: '../../../assets/svg/globe.svg'
     }
   ];
 
@@ -40,16 +33,9 @@ export class InfoComponent {
       img: '../../../assets/svg/calendar.svg'
     },
     {
-      title: 'Instagram',
-      desc: '¡Siguenos en Instagram!',
-      link: 'https://www.instagram.com/prosalfinancialservices',
-      img: '../../../assets/svg/instagram.svg'
-    },
-    {
-      title: 'TikTok',
-      desc: '¡Siguenos en TikTok!',
-      link: 'https://www.tiktok.com/@prosalfinancialservices',
-      img: '../../../assets/svg/tiktok.svg'
+      title: 'Mis redes sociales',
+      desc: 'Sigueme!',
+      img: '../../../assets/svg/globe.svg'
     }
   ]
 }

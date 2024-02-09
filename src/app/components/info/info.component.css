@@ -8,10 +8,7 @@
     margin-bottom: 10px;
     height: 150px !important;
     border-radius: 50px 50px;
-}
-
-.last-child{
-    height: 110px;
+    background: linear-gradient(rgba(254, 255, 255, 1), rgba(255, 255, 255, 0.7));
 }
 
 .card img {
@@ -23,11 +20,15 @@
 .card h5 {
     margin-left: 80px;
     margin-top: -10px;
+    font-family: 'Righteous, sans-serif';
+    font-size: 25px !important;
 }
 
 .card p {
     margin-left: 80px;
     margin-top: -5px;
+    font-family: 'Lexend, sans-serif';
+    font-size: 17px !important;
 }
 
 #Contacto {
@@ -48,6 +49,8 @@
     border-radius: 5px;
     align-items: center;
     padding-left: 10px;
+    font-family: 'Lexend, sans-serif';
+    font-size: 16px;
 }
 
 #g:hover {
