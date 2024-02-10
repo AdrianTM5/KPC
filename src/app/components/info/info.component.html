@@ -1,10 +1,10 @@
-<div *ngIf="selector.op == 0">
+<div *ngIf="selector.op == 0"> <!-- Spanish -->
   <div id="Contacto">
     <a href="../files/Flowcontact.vcf" id="g" download="Flowcontact.vcf">Agregar a Contactos</a>
   </div>
   <div class="container mt-5">
     <div class="col">
-      <div *ngFor="let project of es; let last = last" class="row-md-4 no-gutters">
+      <div *ngFor="let project of es; let last = last" class="row-md-4 no-gutters"> 
         <div class="card" style="width: 18rem;">
           <div *ngIf="project.link != null; else onclick">
             <a [href]="project.link" id="Card">
@@ -32,13 +32,13 @@
   </div>
 </div>
 
-<div *ngIf="selector.op == 1">
+<div *ngIf="selector.op == 1"> <!-- English -->
   <div id="Contacto">
     <a href="../files/Flowcontact.vcf" id="g" download="Flowcontact.vcf">Add to Contacts</a>
   </div>
   <div class="container mt-5">
     <div class="col">
-      <div *ngFor="let project of en; let last = last" class="row-md-4 no-gutters" >
+      <div *ngFor="let project of en; let last = last" class="row-md-4 no-gutters" > 
         <div class="card" style="width: 18rem;">
            <div *ngIf="project.link != null; else onclick">
             <a [href]="project.link" id="Card">
@@ -66,29 +66,60 @@
   </div>
 </div>
 
-<div *ngIf="selector.op == 0; else modEng">
-  <div class="modal" id="myModal">
-    <div class="modal-dialog">
-      <div class="modal-content">
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
   
-        <div class="modal-header">
-          <h4 class="modal-title">Mis redes sociales</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <div class="modal-body">
-          Modal body..
-        </div>
-  
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
+      <div class="modal-header">
+        <h4 *ngIf="selector.op == 0" class="modal-title">Redes Sociales</h4>
+        <h4 *ngIf="selector.op == 1" class="modal-title">Social Pages</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
+  
+      <div *ngIf="selector.op == 0"> <!-- Spanish Social Media -->
+        <div class="modal-body">
+          <div class="container mt-5">
+            <div class="col">
+              <div *ngFor="let project of smEsp; let last = last" class="row-md-4 no-gutters">
+                <div class="cardd" style="width: 18rem;">
+                  <a [href]="project.link" id="Card">
+                    <img [src]="project.img" class="card-img img-size-2" height="10px">
+                    <div class="card-body">
+                      <h5 class="card-title">{{project.title}}</h5>
+                    </div>
+                  </a>
+                  <div class="video">{{project.video}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="selector.op == 1"> <!-- English Social Media -->
+        <div class="modal-body">
+          <div class="container mt-5">
+            <div class="col">
+              <div *ngFor="let project of smEng; let last = last" class="row-md-4 no-gutters">
+                <div class="cardd" style="width: 18rem;">
+                  <a [href]="project.link" id="Card">
+                    <img [src]="project.img" class="card-img-right img-size-2" height="80px">
+                    <div class="card-body">
+                      <h5 class="card-title">{{project.title}}</h5>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="modal-footer">
+        <button *ngIf="selector.op == 0" type="button" class="btn color" data-bs-dismiss="modal">Cerrar</button>
+        <button *ngIf="selector.op == 1" type="button" class="btn color" data-bs-dismiss="modal">Close</button>
+      </div>
+  
     </div>
   </div>
 </div>
-
-<ng-template #modEng>
-
-</ng-template>

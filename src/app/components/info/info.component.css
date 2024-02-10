@@ -11,6 +11,23 @@
     background: linear-gradient(rgba(254, 255, 255, 1), rgba(255, 255, 255, 0.7));
 }
 
+.cardd {
+    margin-top: 10px;
+    margin-bottom: 200px;
+    margin-left: 75px;
+    height: 50px !important;
+    border-radius: 50px 50px;
+    background: linear-gradient(rgba(3,35,68, 0.7), rgba(3,35,68, 1));
+}
+
+.cardd h5 {
+    font-family: 'Righteous, sans-serif';
+    font-size: 25px !important;
+    color: white;
+    margin-top: -40px;
+}
+
+
 .card img {
     position: absolute;
     left: 20px !important;
@@ -29,6 +46,16 @@
     margin-top: -5px;
     font-family: 'Lexend, sans-serif';
     font-size: 17px !important;
+}
+
+.color {
+    background-color: #032344;
+    color: white;
+}
+
+.video {
+    height: 100px;
+    width: 100px;
 }
 
 #Contacto {
